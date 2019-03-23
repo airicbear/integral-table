@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+  <title>Table of Integrals</title>
+
+  <!-- KaTeX -->
+  <link rel="stylesheet" href="./katex/katex.min.css"
+    integrity="sha384-dbVIfZGuN1Yq7/1Ocstc1lUEm+AT+/rCkibIcC/OmWo5f0EA48Vf8CytHzGrSwbQ" crossorigin="anonymous">
+  <script defer src="./katex/katex.min.js"
+    integrity="sha384-2BKqo+exmr9su6dir+qCw08N2ZKRucY4PrGQPPWU1A7FtlCGjmEGFqXCv5nyM5Ij" crossorigin="anonymous">
+  </script>
+  <script defer src="./katex/contrib/auto-render.min.js"
+    integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+  <script defer src="./js/main.js"></script>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <header>
+    <h1>Table of Integrals</h1>
+  </header>
+  <form name="constantsForm" id="constantsForm" onclick="return false">
+    <button onclick="pluginConstants('constantsForm')">Plug-in constants</button>
+    <input type="text" name="constantA" placeholder="a" value="a">
+    <input type="text" name="constantB" placeholder="b" value="b">
+    <input type="text" name="constantC" placeholder="c" value="c">
+    <input type="text" name="constantN" placeholder="n" value="n">
+  </form>
+  <main id="main"></main>
+</body>
+
+</html>

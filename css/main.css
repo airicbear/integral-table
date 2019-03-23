@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  margin: 0 1cm;
+}
+
+#constantsForm {
+  top: 0.25cm;
+  right: 0.25cm;
+  position: fixed;
+  z-index: 2;
+}
+
+#constantsForm * {
+  display: block;
+  width: 2cm;
+}
+
+section {
+  padding: 0 1cm;
+  margin: 1cm 0;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 11px;
+  }
+
+  header {
+    margin: 0 0.25cm;
+  }
+
+  main {
+    margin: 0 -0.75cm;
+  }
+}
