@@ -65,8 +65,21 @@ const data = {
       "\\int x \\sqrt{ax^2 + bx + c} = \\frac{1}{48a^{5/2}} \\left(2 \\sqrt{a} \\sqrt{ax^2 + bx + c} \\times \\left(-3b^2 + 2abx + 8a \\left(c + ax^2\\right)\\right) + 3 \\left(b^3 - 4abc\\right) \\ln\\left|b + 2ax + 2 \\sqrt{a} \\sqrt{ax^2 + bx + c}\\right|\\right)",
       "\\int \\frac{1}{\\sqrt{ax^2 + bx + c}} dx = \\frac{1}{\\sqrt{a}} \\ln\\left|2ax + b + 2 \\sqrt{a\\left(ax^2 + bx + c\\right)}\\right|",
       "\\int \\frac{x}{\\sqrt{ax^2 + bx + c}} dx = \\frac{1}{a} \\sqrt{ax^2 + bx + c} - \\frac{b}{2a^{3/2}} \\ln\\left|2ax + b + 2\\sqrt{a\\left(ax^2 + bx + c\\right)}\\right|",
-      "\\int \\frac{dx}{\\left(a^2 + x^2\\right)^{3/2}} = \\frac{x}{a^2 \\sqrt{a^2 + x^2}}"
+      "\\int \\frac{dx}{\\left(a^2 + x^2\\right)^{3/2}} = \\frac{x}{a^2 \\sqrt{a^2 + x^2}}",
     ]
+  },
+  "section4": {
+    "title": "Integrals with Logarithms",
+    "integrals": [
+      "\\int \\ln{ax} dx = x \\ln{ax} - x",
+      "\\int \\frac{\\ln{ax}}{x} dx = \\frac{1}{2} \\left(\\ln{ax}\\right)^2",
+      "\\int \\left(ax + b\\right) dx = \\left(x + \\frac{b}{a}\\right) \\ln\\left(ax + b\\right) - x, \\quad a \\neq 0",
+      "\\int \\ln\\left(x^2 + a^2\\right) dx = x \\ln\\left(x^2 + a^2\\right) + 2a \\tan^{-1} \\frac{x}{a} - 2x",
+      "\\int \\ln\\left(x^2 - a^2\\right) dx = x \\ln\\left(x^2 - a^2\\right) + a \\ln \\frac{x + a}{x - a} - 2x",
+      "\\int \\ln \\left(ax^2 + bx + c\\right) dx = \\frac{1}{a} \\sqrt{4ac - b^2} \\tan^{-1} \\frac{2ax + b}{\\sqrt{4ac - b^2}} - 2x + \\left(\\frac{b}{2a} + x\\right) \\ln\\left(ax^2 + bx + c\\right)",
+      "\\int x \\ln\\left(ax + b\\right) dx = \\frac{bx}{2a} - \\frac{1}{4} x^2 + \\frac{1}{2} \\left(x^2 - \\frac{b^2}{a^2}\\right) \\ln\\left(ax + b\\right)",
+      "\\int x \\ln\\left(a^2 - b^2 x^2\\right) dx = - \\frac{1}{2} x^2 + \\frac{1}{2} \\left(x^2 - \\frac{a^2}{b^2}\\right) \\ln\\left(a^2 - b^2 x^2\\right)",
+    ],
   },
 };
 
@@ -95,6 +108,7 @@ function replaceVariable(str, variable, a, b, c, n) {
     .replace(/a\}/g, "(" + a + ")}")
     .replace(/\(a/g, "((" + a + ")")
     .replace(/a\)/g, "(" + a + "))")
+    .replace(/\)a/g, ")(" + a + ")")
     .replace(/[ ]? (a)[ ]?/g, "(" + a + ")") :
     variable === "b" ? str
     .replace(/\|b/g, "|(" + b + ")")
@@ -105,6 +119,7 @@ function replaceVariable(str, variable, a, b, c, n) {
     .replace(/b\}/g, "(" + b + ")}")
     .replace(/\(b/g, "((" + b + ")")
     .replace(/b\)/g, "(" + b + "))")
+    .replace(/\)b/g, ")(" + b + ")")
     .replace(/[ ]? (b)[ ]?/g, "(" + b + ")") :
     variable === "c" ? str
     .replace(/\|c/g, "|(" + c + ")")
@@ -115,6 +130,7 @@ function replaceVariable(str, variable, a, b, c, n) {
     .replace(/c\}/g, "(" + c + ")}")
     .replace(/\(c/g, "((" + c + ")")
     .replace(/c\)/g, "(" + c + "))")
+    .replace(/\)c/g, ")(" + c + ")")
     .replace(/[ ]? (c)[ ]?/g, "(" + c + ")") :
     variable === "n" ? str
     .replace(/\|n/g, "|(" + n + ")")
