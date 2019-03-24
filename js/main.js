@@ -8,6 +8,10 @@ const RENDER_OPTIONS = {
   "throwOnError": false,
   "errorColor": "#353535",
   "strict": "warn",
+  "macros": {
+    "\\erf": "\\text{erf}",
+    "\\where": "\\text{where }",
+  },
 };
 const NUM_INTEGRALS = () => document.getElementsByClassName(INTEGRAL_CLASS).length + 1;
 
@@ -81,6 +85,24 @@ const data = {
       "\\int x \\ln\\left(a^2 - b^2 x^2\\right) dx = - \\frac{1}{2} x^2 + \\frac{1}{2} \\left(x^2 - \\frac{a^2}{b^2}\\right) \\ln\\left(a^2 - b^2 x^2\\right)",
     ],
   },
+  "section5": {
+    "title": "Integrals with Exponentials",
+    "integrals": [
+      "\\int e^{ax} dx = \\frac{1}{a} e^{ax}",
+      "\\int \\sqrt{x} e^{ax} dx = \\frac{1}{a} \\sqrt{x} e^{ax} + \\frac{i \\sqrt{\\pi}}{2a^{3/2}} \\erf\\left(i \\sqrt{ax}\\right), \\quad \\where \\erf\\left(x\\right) = \\frac{2}{\\sqrt{\\pi}} \\int_0^\\pi e^{-t^2} dt",
+      "\\int xe^x dx = \\left(x - 1\\right) e^x",
+      "\\int xe^{ax} dx = \\left(\\frac{x}{a} - \\frac{1}{a^2}\\right) e^{ax}",
+      "\\int x^2 e^x dx = \\left(x^2 - 2x + 2\\right) e^x",
+      "\\int x^2 e^{ax} dx = \\left(\\frac{x^2}{a} - \\frac{2x}{a^2} + \\frac{2}{a^3}\\right) e^{ax}",
+      "\\int x^3 e^x dx = \\left(x^3 - 3x^2 + 6x - 6\\right) e^x",
+      "\\int x^n e^{ax} dx = \\frac{x^n e^{ax}}{a} - \\frac{n}{a} \\int x^{n - 1} e^{ax} dx",
+      "\\int x^n e^{ax} dx = \\frac{\\left(-1\\right)^n}{a^{n + 1}} \\Gamma[1 + n, -ax], \\quad \\where \\Gamma(a, x) = \\int_x^\\infty t^{a - 1} e^{-1} dt",
+      "\\int e^{ax^2} dx = - \\frac{i \\sqrt{\\pi}}{2 \\sqrt{a}} \\erf \\left(ix \\sqrt{a}\\right)",
+      "\\int e^{-ax^2} dx = \\frac{\\sqrt{\\pi}}{2 \\sqrt{a}} \\erf \\left(x \\sqrt{a}\\right)",
+      "xe^{-ax^2} dx = - \\frac{1}{2a} e^{-ax^2}",
+      "\\int x^2 e^{-ax^2} dx = \\frac{1}{4} \\sqrt{\\frac{\\pi}{a^3}} \\erf\\left(x \\sqrt{a}\\right) - \\frac{x}{2a} e^{-ax^2}"
+    ],
+  },
 };
 
 // HELPER FUNCTIONS
@@ -102,6 +124,7 @@ function replaceVariable(str, variable, a, b, c, n) {
   return variable === "a" ? str
     .replace(/\|a/g, "|(" + a + ")")
     .replace(/a\^/g, "(" + a + ")^")
+    .replace(/\^a/g, "^{(" + a + ")}")
     .replace(/\{a/g, "{(" + a + ")")
     .replace(/4a/g, "4(" + a + ")")
     .replace(/ax/g, "(" + a + ")x")
@@ -113,6 +136,7 @@ function replaceVariable(str, variable, a, b, c, n) {
     variable === "b" ? str
     .replace(/\|b/g, "|(" + b + ")")
     .replace(/b\^/g, "(" + b + ")^")
+    .replace(/\^b/g, "^{(" + b + ")}")
     .replace(/\{b/g, "{(" + b + ")")
     .replace(/4b/g, "4(" + b + ")")
     .replace(/bx/g, "(" + b + ")x")
@@ -124,6 +148,7 @@ function replaceVariable(str, variable, a, b, c, n) {
     variable === "c" ? str
     .replace(/\|c/g, "|(" + c + ")")
     .replace(/c\^/g, "(" + c + ")^")
+    .replace(/\^c/g, "^{(" + c + ")}")
     .replace(/\}c/g, "}(" + c + ")")
     .replace(/4c/g, "4(" + c + ")")
     .replace(/cx/g, "(" + c + ")x")
@@ -135,6 +160,7 @@ function replaceVariable(str, variable, a, b, c, n) {
     variable === "n" ? str
     .replace(/\|n/g, "|(" + n + ")")
     .replace(/^[ia]n\^/g, "(" + n + ")^")
+    .replace(/\^n/g, "^{(" + n + ")}")
     .replace(/\{n/g, "{(" + n + ")")
     .replace(/4n/g, "4(" + n + ")")
     .replace(/nx/g, "(" + n + ")x")
