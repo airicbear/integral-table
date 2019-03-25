@@ -30,7 +30,7 @@ const data = {
     "integrals": [
       "\\int \\frac{1}{\\left(x + a \\right)^{2}} dx = - \\frac{1}{x + a }",
       "\\int \\left(x + a \\right)^{ n } dx = \\frac{\\left(x + a \\right)^{ n  + 1}}{ n + 1}, \\quad n \\neq 1",
-      "\\int x\\left(x + a \\right)^{ n } dx = \\frac{\\left(x + a \\right)^{ n  + 1}\\left(\\left(n + 1\\right) x - a \\right)}{\\left(n + 1\\right)\\left(n + 2\\right)}",
+      "\\int x\\left(x + a \\right)^{ n } dx = \\frac{\\left(x + a \\right)^{ n  + 1}\\left(\\left( n + 1\\right) x - a \\right)}{\\left( n + 1\\right)\\left( n + 2\\right)}",
       "\\int \\frac{1}{1 + x^{2}} dx = \\tan^{-1} x",
       "\\int \\frac{1}{ a ^{2} + x^{2}} dx = \\frac{1}{ a } \\tan^{-1} \\frac{x}{ a }",
       "\\int \\frac{1}{ a ^{2} + x^{2}} dx = \\frac{1}{2} \\ln\\left| a ^{2} + x^{2}\\right|",
@@ -108,7 +108,7 @@ const data = {
     "integrals": [
       "\\int \\sin{ a x} dx = - \\frac{1}{ a } \\cos{ a x}",
       "\\int \\sin^{2}{ a x} dx = \\frac{x}{2} - \\frac{\\sin{2 a x}}{4 a }",
-      "\\int \\sin^{ n }{ a x} dx = - \\frac{1}{ a } \\cos{ a x} \\quad {}_2F_1 \\left[\\frac{1}{2}, \\frac{1 - n}{2}, \\frac{3}{2}, \\cos^{2}{ a x}\\right]",
+      "\\int \\sin^{ n }{ a x} dx = - \\frac{1}{ a } \\cos{ a x} \\quad {}_2F_1 \\left[\\frac{1}{2}, \\frac{1 - n }{2}, \\frac{3}{2}, \\cos^{2}{ a x}\\right]",
       "\\int \\sin^3{ a x} dx = - \\frac{3 \\cos{ a x}}{4 a } + \\frac{\\cos{3 a x}}{12 a }",
       "\\int \\cos{ a x} dx = \\frac{1}{ a } \\sin{ a x}",
       "\\int \\cos^{2}{ a x} dx = \\frac{x}{2} + \\frac{\\sin{2 a x}}{4 a }",
@@ -135,7 +135,23 @@ const data = {
       "\\int \\csc^{2}{ a x} dx = - \\frac{1}{ a } \\cot{ a x}",
       "\\int \\csc^3{x} dx = - \\frac{1}{2} \\cot{x} \\csc{x} + \\frac{1}{2} \\ln{\\left|\\csc{x} - \\cot{x}\\right|}",
       "\\int \\csc^{ n }{x} \\cot{x} dx = - \\frac{1}{ n } \\csc^{ n }{x}, \\quad n \\neq 0",
-      "\\int \\sec{x} \\csc{x} dx =  \\ln{\\left|\\tan{x}\\right|}"
+      "\\int \\sec{x} \\csc{x} dx =  \\ln{\\left|\\tan{x}\\right|}",
+    ],
+  },
+  "section7": {
+    "title": "Products of Trigonometric Functions and Monomials",
+    "integrals": [
+      "\\int x \\cos{x} dx = \\cos{x} + x \\sin{x}",
+      "\\int x \\cos{ a x} dx = \\frac{1}{ a ^{2}} \\cos{ a x} + \\frac{x}{ a } \\sin{ a x}",
+      "\\int x^{2} \\cos{x} dx = 2x \\cos{x} + \\left(x^{2} - 2\\right) \\sin{x}",
+      "\\int x^{2} \\cos{ a x} dx = \\frac{2x \\cos{ a x}}{ a ^{2}} + \\frac{ a ^{2} x^{2} - 2}{ a ^{3}} \\sin{ a x}",
+      "\\int x^{ n } \\cos{x} dx = - \\frac{1}{2} \\left(i\\right)^{n + 1} \\left[\\Gamma{\\left( n + 1, - ix\\right)} + \\left(-1\\right)^{ n } \\Gamma{\\left( n + 1, ix\\right)}\\right]",
+      "\\int x^{ n } \\cos{ a x} dx = \\frac{1}{2} \\left(i a \\right)^{1 - n } \\left[\\left(-1\\right)^{ n } \\Gamma{\\left( n + 1, -i a x\\right)} - \\Gamma{\\left( n + 1, ix a \\right)}\\right]",
+      "\\int x \\sin{x} dx = -x \\cos{x} + \\sin{x}",
+      "\\int x \\sin{ a x} dx = - \\frac{x \\cos{ a x}}{ a } + \\frac{\\sin{ a x}}{ a ^2}",
+      "\\int x^2 \\sin{x} dx = \\left(2 - x^2\\right) \\cos{x} + 2x \\sin{x}",
+      "\\int x^2 \\sin{ a x} dx = \\frac{2 - a ^2 x^2}{ a ^3} \\cos{ a x} + \\frac{2x \\sin{ a x}}{ a ^2}",
+      "\\int x^{ n } \\sin{x} dx = - \\frac{1}{2} \\left(i\\right)^{ n } \\left[\\Gamma{\\left( n + 1, -ix\\right)} - \\left(-1\\right)^{ n } \\Gamma{\\left( n + 1, -ix\\right)}\\right]",
     ],
   },
 };
