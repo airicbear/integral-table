@@ -154,6 +154,17 @@ const data = {
       "\\int x^{ n } \\sin{x} dx = - \\frac{1}{2} \\left(i\\right)^{ n } \\left[\\Gamma{\\left( n + 1, -ix\\right)} - \\left(-1\\right)^{ n } \\Gamma{\\left( n + 1, -ix\\right)}\\right]",
     ],
   },
+  "section8": {
+    "title": "Products of Trigonometric Functions and Exponentials",
+    "integrals": [
+      "\\int e^{x} \\sin{x} dx = \\frac{1}{2} e^{x} \\left(\\sin{x} - \\cos{x}\\right)",
+      "\\int e^{ b x} \\sin{ a x} dx = \\frac{1}{ a ^{2} + b ^{2}} e^{ b x} \\left( b \\sin{ a x} - a \\cos{ a x}\\right)",
+      "\\int e^{x} \\cos{x} dx = \\frac{1}{2} e^{x} \\left(\\sin{x} + \\cos{x}\\right)",
+      "\\int e^{ b x} \\cos{ a x} dx = \\frac{1}{ a ^{2} + b ^{2}} e^{ b x} \\left( a \\sin{ a x} + b \\cos{ a x}\\right)",
+      "\\int xe^{x} \\sin{x} dx = \\frac{1}{2} e^{x} \\left(\\cos{x} - x \\cos{x} + x \\sin{x}\\right)",
+      "\\int xe^{x} \\cos{x} dx = \\frac{1}{2} e^{x} \\left(x \\cos{x} - \\sin{x} + x \\sin{x}\\right)"
+    ],
+  },
 };
 
 // HELPER FUNCTIONS
