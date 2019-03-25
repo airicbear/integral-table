@@ -103,6 +103,41 @@ const data = {
       "\\int x^2 e^{-ax^2} dx = \\frac{1}{4} \\sqrt{\\frac{\\pi}{a^3}} \\erf\\left(x \\sqrt{a}\\right) - \\frac{x}{2a} e^{-ax^2}"
     ],
   },
+  "section6": {
+    "title": "Integrals with Trigonometric Functions",
+    "integrals": [
+      "\\int \\sin{ax} dx = - \\frac{1}{a} \\cos{ax}",
+      "\\int \\sin^2{ax} dx = \\frac{x}{2} - \\frac{\\sin{2ax}}{4a}",
+      "\\int \\sin^n{ax} dx = - \\frac{1}{a} \\cos{ax} \\quad {}_2F_1 \\left[\\frac{1}{2}, \\frac{1 - n}{2}, \\frac{3}{2}, \\cos^2{ax}\\right]",
+      "\\int \\sin^3{ax} dx = - \\frac{3 \\cos{ax}}{4a} + \\frac{\\cos{3ax}}{12a}",
+      "\\int \\cos{ax} dx = \\frac{1}{a} \\sin{ax}",
+      "\\int \\cos^2{ax} dx = \\frac{x}{2} + \\frac{\\sin{2ax}}{4a}",
+      "\\int \\cos^p{ax} dx = - \\frac{1}{a \\left(1 + p\\right)} \\cos^{1 + p}{ax} \\times {}_2F_1 \\left[\\frac{1 + p}{2}, \\frac{1}{2}, \\frac{3 + p}{2}, \\cos^2{ax}\\right]",
+      "\\int \\cos^3{ax} dx = \\frac{3 \\sin{ax}}{4a} + \\frac{\\sin{3ax}}{12a}",
+      "\\int \\cos{ax} \\sin{bx} dx = \\frac{\\cos\\left[\\left(a - b\\right) x\\right]}{2 \\left(a - b\\right)} - \\frac{\\cos\\left[\\left(a + b\\right) x\\right]}{2 \\left(a + b\\right)}, \\quad a \\neq b",
+      "\\int \\sin^2{ax} \\cos{bx} dx = - \\frac{\\sin\\left[\\left(2a - b\\right) x\\right]}{4 \\left(2a - b\\right)} + \\frac{\\sin{bx}}{2b} - \\frac{\\sin\\left[\\left(2a + b\\right) x\\right]}{4 \\left(2a + b\\right)}",
+      "\\int \\sin^2{x} \\cos{x} dx = \\frac{1}{3} \\sin^3{x}",
+      "\\int \\cos^2{ax} \\sin{bx} dx = \\frac{\\cos\\left[\\left(2a - b\\right) x\\right]}{4 \\left(2a - b\\right)} - \\frac{\\cos{bx}}{2b} - \\frac{\\cos{\\left[\\left(2a + b\\right) x\\right]}}{4 \\left(2a + b\\right)}",
+      "\\int \\cos^2{ax} \\sin{ax} dx = - \\frac{1}{3a} \\cos^3{ax}",
+      "\\int \\sin^2{ax} \\cos^2{bx} dx = \\frac{x}{4} - \\frac{\\sin{2ax}}{8a} - \\frac{\\sin{\\left[2 \\left(a - b\\right) x\\right]}}{16 \\left(a - b\\right)} + \\frac{\\sin{2bx}}{8b} - \\frac{\\sin{\\left[2 \\left(a + b\\right) x\\right]}}{16 \\left(a + b\\right)}",
+      "\\int \\sin^2{ax} \\cos^2{ax} dx = \\frac{x}{8} - \\frac{\\sin{4ax}}{32a}",
+      "\\int \\tan{ax} dx = - \\frac{1}{a} \\ln{\\cos{ax}}",
+      "\\int \\tan^2{ax} dx = -x + \\frac{1}{a} \\tan{ax}",
+      "\\int \\tan^n{ax} dx = \\frac{\\tan^{n + 1} ax}{a \\left(1 + n\\right)} \\times {}_2F_1 \\left(\\frac{n + 1}{2}, 1, \\frac{n + 3}{2}, - \\tan^2{ax}\\right)",
+      "\\int \\tan^3{ax} dx = \\frac{1}{a} \\ln{\\cos{ax}} + \\frac{1}{2a} \\sec^2{ax}",
+      "\\int \\sec{x} dx = \\ln{\\left|\\sec{x} + \\tan{x}\\right|} = 2 \\tanh^{-1} \\left(\\tan{\\frac{x}{2}}\\right)",
+      "\\int \\sec^2{ax} dx = \\frac{1}{a} \\tan{ax}",
+      "\\int \\sec^3{x} dx = \\frac{1}{2} \\sec{x} \\tan{x} + \\frac{1}{2} \\ln{\\left|\\sec{x} + \\tan{x}\\right|}",
+      "\\int \\sec{x} \\tan{x} dx = \\sec{x}",
+      "\\int \\sec^2{x} \\tan{x} dx = \\frac{1}{2} \\sec^2{x}",
+      "\\int \\sec^n{x} \\tan{x} dx = \\frac{1}{n} \\sec^n{x}, \\quad n \\neq 0",
+      "\\int \\csc{x} dx = \\ln{\\left|\\tan{\\frac{x}{2}}\\right|} = \\ln{\\left|\\csc{x} - \\cot{x}\\right|} + C",
+      "\\int \\csc^2{ax} dx = - \\frac{1}{a} \\cot{ax}",
+      "\\int \\csc^3{x} dx = - \\frac{1}{2} \\cot{x} \\csc{x} + \\frac{1}{2} \\ln{\\left|\\csc{x} - \\cot{x}\\right|}",
+      "\\int \\csc^n{x} \\cot{x} dx = - \\frac{1}{n} \\csc^n{x}, \\quad n \\neq 0",
+      "\\int \\sec{x} \\csc{x} dx =  \\ln{\\left|\\tan{x}\\right|}"
+    ],
+  },
 };
 
 // HELPER FUNCTIONS
@@ -122,52 +157,52 @@ function replaceVariable(str, variable, a, b, c, n) {
   // TODO: Use RegExp class
   // TODO: Fix conflicts with KaTeX
   return variable === "a" ? str
-    .replace(/\|a/g, "|(" + a + ")")
-    .replace(/a\^/g, "(" + a + ")^")
-    .replace(/\^a/g, "^{(" + a + ")}")
-    .replace(/\{a/g, "{(" + a + ")")
-    .replace(/4a/g, "4(" + a + ")")
-    .replace(/ax/g, "(" + a + ")x")
-    .replace(/a\}/g, "(" + a + ")}")
-    .replace(/\(a/g, "((" + a + ")")
-    .replace(/a\)/g, "(" + a + "))")
-    .replace(/\)a/g, ")(" + a + ")")
-    .replace(/[ ]? (a)[ ]?/g, "(" + a + ")") :
+    .replace(/2a/g, "2\\left(" + a + "\\right)")
+    .replace(/\|a/g, "|\\left(" + a + "\\right)")
+    .replace(/a\^/g, "\\left(" + a + "\\right)^")
+    .replace(/\^a/g, "^{\\left(" + a + "\\right)}")
+    .replace(/\{a/g, "{\\left(" + a + "\\right)")
+    .replace(/4a/g, "4\\left(" + a + "\\right)")
+    .replace(/ax/g, "\\left(" + a + "\\right)x")
+    .replace(/a\}/g, "\\left(" + a + "\\right)}")
+    .replace(/\(a/g, "(\\left(" + a + "\\right)")
+    .replace(/a\)/g, "\\left(" + a + "\\right))")
+    .replace(/\)a/g, ")\\left(" + a + "\\right)")
+    .replace(/[ ]? (a)[ ]?/g, "\\left(" + a + "\\right)") :
     variable === "b" ? str
-    .replace(/\|b/g, "|(" + b + ")")
-    .replace(/b\^/g, "(" + b + ")^")
-    .replace(/\^b/g, "^{(" + b + ")}")
-    .replace(/\{b/g, "{(" + b + ")")
-    .replace(/4b/g, "4(" + b + ")")
-    .replace(/bx/g, "(" + b + ")x")
-    .replace(/b\}/g, "(" + b + ")}")
-    .replace(/\(b/g, "((" + b + ")")
-    .replace(/b\)/g, "(" + b + "))")
-    .replace(/\)b/g, ")(" + b + ")")
-    .replace(/[ ]? (b)[ ]?/g, "(" + b + ")") :
+    .replace(/\|b/g, "|\\left(" + b + "\\right)")
+    .replace(/b\^/g, "\\left(" + b + "\\right)^")
+    .replace(/\^b/g, "^{\\left(" + b + "\\right)}")
+    .replace(/\{b/g, "{\\left(" + b + "\\right)")
+    .replace(/4b/g, "4\\left(" + b + "\\right)")
+    .replace(/bx/g, "\\left(" + b + "\\right)x")
+    .replace(/b\}/g, "\\left(" + b + "\\right)}")
+    .replace(/\(b/g, "(\\left(" + b + "\\right)")
+    .replace(/b\)/g, "\\left(" + b + "\\right))")
+    .replace(/\)b/g, ")\\left(" + b + "\\right)")
+    .replace(/[ ]? (b)[ ]?/g, "\\left(" + b + "\\right)") :
     variable === "c" ? str
-    .replace(/\|c/g, "|(" + c + ")")
-    .replace(/c\^/g, "(" + c + ")^")
-    .replace(/\^c/g, "^{(" + c + ")}")
-    .replace(/\}c/g, "}(" + c + ")")
-    .replace(/4c/g, "4(" + c + ")")
-    .replace(/cx/g, "(" + c + ")x")
-    .replace(/c\}/g, "(" + c + ")}")
-    .replace(/\(c/g, "((" + c + ")")
-    .replace(/c\)/g, "(" + c + "))")
-    .replace(/\)c/g, ")(" + c + ")")
-    .replace(/[ ]? (c)[ ]?/g, "(" + c + ")") :
+    .replace(/\|c/g, "|\\left(" + c + "\\right)")
+    .replace(/\^c/g, "^{\\left(" + c + "\\right)}")
+    .replace(/\}c/g, "}\\left(" + c + "\\right)")
+    .replace(/4c/g, "4\\left(" + c + "\\right)")
+    .replace(/cx/g, "\\left(" + c + "\\right)x")
+    .replace(/c\}/g, "\\left(" + c + "\\right)}")
+    .replace(/\(c/g, "(\\left(" + c + "\\right)")
+    .replace(/c\)/g, "\\left(" + c + "\\right))")
+    .replace(/\)c/g, ")\\left(" + c + "\\right)")
+    .replace(/[ ]? (c)[ ]?/g, "\\left(" + c + "\\right)") :
     variable === "n" ? str
-    .replace(/\|n/g, "|(" + n + ")")
-    .replace(/^[ia]n\^/g, "(" + n + ")^")
-    .replace(/\^n/g, "^{(" + n + ")}")
-    .replace(/\{n/g, "{(" + n + ")")
-    .replace(/4n/g, "4(" + n + ")")
-    .replace(/nx/g, "(" + n + ")x")
-    .replace(/n\}/g, "(" + n + ")}")
-    .replace(/\(n/g, "((" + n + ")")
-    .replace(/n\)/g, "(" + n + "))")
-    .replace(/[ ]? (n)[ ]?/g, "(" + n + ")") :
+    .replace(/\|n/g, "|\\left(" + n + "\\right)")
+    .replace(/^[ia]n\^/g, "\\left(" + n + "\\right)^")
+    .replace(/\^n/g, "^{\\left(" + n + "\\right)}")
+    .replace(/\{n/g, "{\\left(" + n + "\\right)")
+    .replace(/4n/g, "4\\left(" + n + "\\right)")
+    .replace(/nx/g, "\\left(" + n + "\\right)x")
+    .replace(/n\}/g, "\\left(" + n + "\\right)}")
+    .replace(/\(n/g, "(\\left(" + n + "\\right)")
+    .replace(/n\)/g, "\\left(" + n + "\\right))")
+    .replace(/[ ]? (n)[ ]?/g, "\\left(" + n + "\\right)") :
     str;
 }
 
