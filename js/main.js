@@ -37,9 +37,9 @@ const data = {
       "\\int \\frac{x^{2}}{ a ^{2} + x^{2}} dx = x - a \\tan^{-1} \\frac{x}{ a }",
       "\\int \\frac{x^3}{ a ^{2} + x^{2}} dx = \\frac{1}{2} x^{2} - \\frac{1}{2} a ^{2} \\ln\\left| a ^{2} + x^{2}\\right|",
       "\\int \\frac{1}{ a x^{2} + b x + c} dx = \\frac{2}{\\sqrt{4 a  c - b ^{2}}} \\tan^{-1} \\frac{2 a x + b }{\\sqrt{4 a  c - b  ^ {2}}}",
-      "\\int \\frac{1}{\\left(x + a \\right)(x + b )} dx = \\frac{1}{b - a } \\ln\\frac{ a  + x}{b + x}, \\quad a \\neq b ",
+      "\\int \\frac{1}{\\left(x + a \\right)(x + b )} dx = \\frac{1}{ b - a } \\ln\\frac{ a  + x}{ b + x}, \\quad a \\neq b ",
       "\\int \\frac{x}{\\left(x + a \\right)^{2}} = \\frac{ a }{ a  + x} + \\ln\\left| a + x\\right|",
-      "\\int \\frac{x}{ a x^{2} + b x + c} dx = \\frac{1}{2 a } \\ln\\left| a x^{2} + b x + c \\right| - \\frac{b}{ a  \\sqrt{4 a  c - b ^{2}}} \\tan^{-1} \\frac{2 a x + b }{\\sqrt{4 a  c - b ^{2}}}",
+      "\\int \\frac{x}{ a x^{2} + b x + c} dx = \\frac{1}{2 a } \\ln\\left| a x^{2} + b x + c \\right| - \\frac{ b }{ a  \\sqrt{4 a  c - b ^{2}}} \\tan^{-1} \\frac{2 a x + b }{\\sqrt{4 a  c - b ^{2}}}",
     ]
   },
   "section3": {
@@ -50,13 +50,13 @@ const data = {
       "\\int \\frac{1}{\\sqrt{ a  - x}} dx = -2 \\sqrt{ a  - x}",
       "\\int x\\sqrt{x - a } dx = \\frac{2}{3} a \\left(x - a \\right)^{3/2} + \\frac{2}{5} \\left(x - a \\right)^{5/2}",
       "\\int \\sqrt{ a x + b } dx = \\left(\\frac{2 b }{3 a } + \\frac{2x}{3}\\right) \\sqrt{ a x + b }",
-      "\\int \\left( a x + b \\right)^{3/2} dx = \\frac{2}{5a}\\left( a x + b \\right)^{5/2}",
+      "\\int \\left( a x + b \\right)^{3/2} dx = \\frac{2}{5a }\\left( a x + b \\right)^{5/2}",
       "\\int \\frac{x}{\\sqrt{x \\pm a }} dx = \\frac{2}{3} \\left(x \\mp 2 a \\right) \\sqrt{x \\pm a }",
       "\\int \\sqrt{\\frac{x}{ a  - x}} dx = - \\sqrt{x\\left( a - x\\right)} - a \\tan^{-1} \\frac{\\sqrt{x\\left( a - x\\right)}}{x - a }",
       "\\int \\sqrt{\\frac{x}{ a  + x}} dx = \\sqrt{x\\left( a + x\\right)} - a \\ln \\left[\\sqrt{x} + \\sqrt{x + a }\\right]",
       "\\int x \\sqrt{ a x + b } dx = \\frac{2}{15a ^{2}} \\left(-2 b ^{2} + a b x + 3a ^{2}x^{2}\\right) \\sqrt{ a x + b }",
       "\\int \\sqrt{x \\left( a x + b \\right)} dx = \\frac{1}{4 a ^{3/2}} \\left[(2 a x + b ) \\sqrt{ a x \\left( a x + b \\right)} - b ^{2} \\ln \\left| a \\sqrt{x} + \\sqrt{ a \\left( a x + b \\right)}\\right|\\right]",
-      "\\int \\sqrt{x^3 \\left( a x + b \\right)} dx = \\left[\\frac{b}{12 a } - \\frac{b^{2}}{8 a ^{2}x} + \\frac{x}{3}\\right] \\sqrt{x^3 \\left( a x + b \\right)} + \\frac{b^3}{8 a ^{5/2}} \\ln \\left| a \\sqrt{x} + \\sqrt{ a \\left( a x + b \\right)}\\right|",
+      "\\int \\sqrt{x^3 \\left( a x + b \\right)} dx = \\left[\\frac{ b }{12 a } - \\frac{ b^{2}}{8 a ^{2}x} + \\frac{x}{3}\\right] \\sqrt{x^3 \\left( a x + b \\right)} + \\frac{ b^3}{8 a ^{5/2}} \\ln \\left| a \\sqrt{x} + \\sqrt{ a \\left( a x + b \\right)}\\right|",
       "\\int \\sqrt{x^{2} \\pm a ^{2}} dx = \\frac{1}{2} x \\sqrt{x^{2} \\pm a ^{2}} \\pm \\frac{1}{2} a ^{2} \\ln\\left|x + \\sqrt{x^{2} \\pm a ^{2}}\\right|",
       "\\int \\sqrt{ a ^{2} - x^{2}} dx = \\frac{1}{2} x \\sqrt{ a ^{2} - x^{2}} + \\frac{1}{2} a ^{2} \\tan^{-1} \\frac{x}{\\sqrt{ a ^{2} - x^{2}}}",
       "\\int x \\sqrt{x^{2} \\pm a ^{2}} dx = \\frac{1}{3} \\left(x^{2} \\pm a ^{2}\\right)^{3/2}",
@@ -65,10 +65,10 @@ const data = {
       "\\int \\frac{x}{\\sqrt{x^{2} \\pm a ^{2}}} dx = \\sqrt{x^{2} \\pm a ^{2}}",
       "\\int \\frac{x}{\\sqrt{ a ^{2} - x^{2}}} dx = - \\sqrt{ a ^{2} - x^{2}}",
       "\\int \\frac{x^{2}}{\\sqrt{x^{2} \\pm a ^{2}}} dx = \\frac{1}{2} x\\sqrt{x^{2} \\pm a ^{2}} \\mp \\frac{1}{2} a ^{2} \\ln\\left|x + \\sqrt{x^{2} \\pm a ^{2}}\\right|",
-      "\\int \\sqrt{ a x^{2} + b x + c} dx = \\frac{b + 2 a x}{4 a } \\sqrt{ a x^{2} + b x + c} + \\frac{4 a  c - b ^{2}}{8 a ^{3/2}} \\ln\\left|2 a x + b  + 2\\sqrt{ a \\left( a x^{2} + b x + c \\right)}\\right|",
-      "\\int x \\sqrt{ a x^{2} + b x + c} = \\frac{1}{48 a ^{5/2}} \\left(2 \\sqrt{ a } \\sqrt{ a x^{2} + b x + c} \\times \\left(-3b^{2} + 2 a b x + 8a \\left(c +  a x^{2}\\right)\\right) + 3 \\left(b^3 - 4 a bc \\right) \\ln\\left|b + 2 a x + 2 \\sqrt{ a } \\sqrt{ a x^{2} + b x + c}\\right|\\right)",
+      "\\int \\sqrt{ a x^{2} + b x + c} dx = \\frac{ b + 2 a x}{4 a } \\sqrt{ a x^{2} + b x + c} + \\frac{4 a  c - b ^{2}}{8 a ^{3/2}} \\ln\\left|2 a x + b  + 2\\sqrt{ a \\left( a x^{2} + b x + c \\right)}\\right|",
+      "\\int x \\sqrt{ a x^{2} + b x + c} = \\frac{1}{48 a ^{5/2}} \\left(2 \\sqrt{ a } \\sqrt{ a x^{2} + b x + c} \\times \\left(-3b^{2} + 2 a b x + 8 a \\left(c +  a x^{2}\\right)\\right) + 3 \\left(b^3 - 4 a bc \\right) \\ln\\left|b + 2 a x + 2 \\sqrt{ a } \\sqrt{ a x^{2} + b x + c}\\right|\\right)",
       "\\int \\frac{1}{\\sqrt{ a x^{2} + b x + c}} dx = \\frac{1}{\\sqrt{ a }} \\ln\\left|2 a x + b  + 2 \\sqrt{ a \\left( a x^{2} + b x + c \\right)}\\right|",
-      "\\int \\frac{x}{\\sqrt{ a x^{2} + b x + c}} dx = \\frac{1}{ a } \\sqrt{ a x^{2} + b x + c} - \\frac{b}{2 a ^{3/2}} \\ln\\left|2 a x + b  + 2\\sqrt{ a \\left( a x^{2} + b x + c \\right)}\\right|",
+      "\\int \\frac{x}{\\sqrt{ a x^{2} + b x + c}} dx = \\frac{1}{ a } \\sqrt{ a x^{2} + b x + c} - \\frac{ b }{2 a ^{3/2}} \\ln\\left|2 a x + b  + 2\\sqrt{ a \\left( a x^{2} + b x + c \\right)}\\right|",
       "\\int \\frac{dx}{\\left( a ^{2} + x^{2}\\right)^{3/2}} = \\frac{x}{ a ^{2} \\sqrt{ a ^{2} + x^{2}}}",
     ]
   },
@@ -77,12 +77,12 @@ const data = {
     "integrals": [
       "\\int \\ln{ a x} dx = x \\ln{ a x} - x",
       "\\int \\frac{\\ln{ a x}}{x} dx = \\frac{1}{2} \\left(\\ln{ a x}\\right)^{2}",
-      "\\int \\left( a x + b \\right) dx = \\left(x + \\frac{b}{ a }\\right) \\ln\\left( a x + b \\right) - x, \\quad a \\neq 0",
+      "\\int \\left( a x + b \\right) dx = \\left(x + \\frac{ b }{ a }\\right) \\ln\\left( a x + b \\right) - x, \\quad a \\neq 0",
       "\\int \\ln\\left(x^{2} + a ^{2}\\right) dx = x \\ln\\left(x^{2} + a ^{2}\\right) + 2 a \\tan^{-1} \\frac{x}{ a } - 2x",
       "\\int \\ln\\left(x^{2} - a ^{2}\\right) dx = x \\ln\\left(x^{2} - a ^{2}\\right) + a \\ln \\frac{x + a }{x - a } - 2x",
-      "\\int \\ln \\left( a x^{2} + b x + c \\right) dx = \\frac{1}{ a } \\sqrt{4 a  c - b ^{2}} \\tan^{-1} \\frac{2 a x + b }{\\sqrt{4 a  c - b ^{2}}} - 2x + \\left(\\frac{b}{2 a } + x\\right) \\ln\\left( a x^{2} + b x + c \\right)",
-      "\\int x \\ln\\left( a x + b \\right) dx = \\frac{ b x}{2 a } - \\frac{1}{4} x^{2} + \\frac{1}{2} \\left(x^{2} - \\frac{b^{2}}{ a ^{2}}\\right) \\ln\\left( a x + b \\right)",
-      "\\int x \\ln\\left( a ^{2} - b ^{2} x^{2}\\right) dx = - \\frac{1}{2} x^{2} + \\frac{1}{2} \\left(x^{2} - \\frac{ a ^{2}}{b^{2}}\\right) \\ln\\left( a ^{2} - b ^{2} x^{2}\\right)",
+      "\\int \\ln \\left( a x^{2} + b x + c \\right) dx = \\frac{1}{ a } \\sqrt{4 a  c - b ^{2}} \\tan^{-1} \\frac{2 a x + b }{\\sqrt{4 a  c - b ^{2}}} - 2x + \\left(\\frac{ b }{2 a } + x\\right) \\ln\\left( a x^{2} + b x + c \\right)",
+      "\\int x \\ln\\left( a x + b \\right) dx = \\frac{ b x}{2 a } - \\frac{1}{4} x^{2} + \\frac{1}{2} \\left(x^{2} - \\frac{ b^{2}}{ a ^{2}}\\right) \\ln\\left( a x + b \\right)",
+      "\\int x \\ln\\left( a ^{2} - b ^{2} x^{2}\\right) dx = - \\frac{1}{2} x^{2} + \\frac{1}{2} \\left(x^{2} - \\frac{ a ^{2}}{ b^{2}}\\right) \\ln\\left( a ^{2} - b ^{2} x^{2}\\right)",
     ],
   },
   "section5": {
@@ -96,7 +96,7 @@ const data = {
       "\\int x^{2} e^{ a x} dx = \\left(\\frac{x^{2}}{ a } - \\frac{2x}{ a ^{2}} + \\frac{2}{ a ^3}\\right) e^{ a x}",
       "\\int x^3 e^x dx = \\left(x^3 - 3x^{2} + 6x - 6\\right) e^x",
       "\\int x^{ n } e^{ a x} dx = \\frac{x^{ n } e^{ a x}}{ a } - \\frac{ n }{ a } \\int x^{ n  - 1} e^{ a x} dx",
-      "\\int x^{ n } e^{ a x} dx = \\frac{\\left(-1\\right)^{ n }}{ a ^{ n  + 1}} \\Gamma[1 + n , - a x], \\quad \\where \\Gamma( a, x) = \\int_x^\\infty t^{ a  - 1} e^{-1} dt",
+      "\\int x^{ n } e^{ a x} dx = \\frac{\\left(-1\\right)^{ n }}{ a ^{ n  + 1}} \\Gamma[1 + n , - a x], \\quad \\where \\Gamma( a , x) = \\int_x^\\infty t^{ a  - 1} e^{-1} dt",
       "\\int e^{ a x^{2}} dx = - \\frac{i \\sqrt{\\pi}}{2 \\sqrt{ a }} \\erf \\left(ix \\sqrt{ a }\\right)",
       "\\int e^{- a x^{2}} dx = \\frac{\\sqrt{\\pi}}{2 \\sqrt{ a }} \\erf \\left(x \\sqrt{ a }\\right)",
       "xe^{- a x^{2}} dx = - \\frac{1}{2 a } e^{- a x^{2}}",
@@ -119,7 +119,7 @@ const data = {
       "\\int \\sin^{2}{x} \\cos{x} dx = \\frac{1}{3} \\sin^3{x}",
       "\\int \\cos^{2}{ a x} \\sin{ b x} dx = \\frac{\\cos\\left[\\left(2 a - b \\right) x\\right]}{4 \\left(2 a - b \\right)} - \\frac{\\cos{ b x}}{2 b } - \\frac{\\cos{\\left[\\left(2 a + b \\right) x\\right]}}{4 \\left(2 a + b \\right)}",
       "\\int \\cos^{2}{ a x} \\sin{ a x} dx = - \\frac{1}{3 a } \\cos^3{ a x}",
-      "\\int \\sin^{2}{ a x} \\cos^{2}{ b x} dx = \\frac{x}{4} - \\frac{\\sin{2 a x}}{8a} - \\frac{\\sin{\\left[2 \\left( a - b \\right) x\\right]}}{16 \\left( a - b \\right)} + \\frac{\\sin{2 b x}}{8b} - \\frac{\\sin{\\left[2 \\left( a + b \\right) x\\right]}}{16 \\left( a + b \\right)}",
+      "\\int \\sin^{2}{ a x} \\cos^{2}{ b x} dx = \\frac{x}{4} - \\frac{\\sin{2 a x}}{8 a } - \\frac{\\sin{\\left[2 \\left( a - b \\right) x\\right]}}{16 \\left( a - b \\right)} + \\frac{\\sin{2 b x}}{8 b } - \\frac{\\sin{\\left[2 \\left( a + b \\right) x\\right]}}{16 \\left( a + b \\right)}",
       "\\int \\sin^{2}{ a x} \\cos^{2}{ a x} dx = \\frac{x}{8} - \\frac{\\sin{4 a x}}{32 a }",
       "\\int \\tan{ a x} dx = - \\frac{1}{ a } \\ln{\\cos{ a x}}",
       "\\int \\tan^{2}{ a x} dx = -x + \\frac{1}{ a } \\tan{ a x}",
@@ -163,6 +163,34 @@ const data = {
       "\\int e^{ b x} \\cos{ a x} dx = \\frac{1}{ a ^{2} + b ^{2}} e^{ b x} \\left( a \\sin{ a x} + b \\cos{ a x}\\right)",
       "\\int xe^{x} \\sin{x} dx = \\frac{1}{2} e^{x} \\left(\\cos{x} - x \\cos{x} + x \\sin{x}\\right)",
       "\\int xe^{x} \\cos{x} dx = \\frac{1}{2} e^{x} \\left(x \\cos{x} - \\sin{x} + x \\sin{x}\\right)"
+    ],
+  },
+  "section9": {
+    "title": "Integrals of Hyperbolic Functions",
+    "integrals": [
+      "\\int \\cosh{ a x} dx = \\frac{1}{ a } \\sinh{ a x}",
+      `\\int e^{ a x} \\sinh{ b x} dx = \\left\\{\\begin{array}{ll}
+        \\dfrac{e^{ a x}}{ a ^{2} - b ^{2}} \\left[ a \\cosh{ b x} - b \\sinh{ b x}\\right] & a \\neq b \\\\
+        \\dfrac{e^{2 a x}}{4 a } + \\dfrac{x}{2} & a = b 
+      \\end{array}\\right.`,
+      "\\int \\sinh{ a x} dx = \\frac{1}{ a } \\cosh{ a x}",
+      `e^{ a x} \\sinh{ b x} dx = \\left
+      \\{\\begin{array}{ll}
+        \\dfrac{e^{ a x}}{ a ^{2} - b ^{2}} \\left[- b \\cosh{ b x} + a \\sinh{ b x}\\right] & a \\neq b \\\\
+        \\dfrac{e^{2 a x}}{4 a } - \\dfrac{x}{2} & a = b 
+      \\end{array}\\right.`,
+      `\\int e^{ a x} \\tanh{ b x} dx = \\left
+      \\{\\begin{array}{ll}
+        \\dfrac{e^{\\left( a + 2 b \\right) x}}{ a + 2 b } {}_2F_1 \\left[1 + \\dfrac{ a }{2 b }, 1, 2 + \\dfrac{ a }{2 b }, -e^{2 b x}\\right] - \\dfrac{1}{ a } e^{ a x} {}_2F_1 \\left[\\dfrac{ a }{2 b }, 1, 1E, -e^{2 b x}\\right] & a \\neq b \\\\
+        \\dfrac{e^{ a x} - 2 \\tan^{-1} \\left[e^{ a x}\\right]}{ a } & a = b 
+      \\end{array}\\right.`,
+      "\\int \\tanh{ a x} dx = \\frac{1}{ a } \\ln{\\cosh{ a x}}",
+      "\\int \\cos{ a x} \\cosh{ b x} dx = \\frac{1}{ a ^{2} + b ^{2}} \\left[ a \\sin{ a x} \\cosh{ b x} + b \\cos{ a x} \\sinh{ b x}\\right]",
+      "\\int \\cos{ a x} \\sinh{ b x} dx = \\frac{1}{ a ^{2} + b^{2}} \\left[ b \\cos{ a x} \\cosh{ b x} + a \\sin{ a x} \\sinh{ b x}\\right]",
+      "\\int \\sin{ a x} \\cosh{ b x} dx = \\frac{1}{ a ^{2} + b ^{2}} \\left[- a \\cos{ a x} \\cosh{ b x} + b \\sin{ a x} \\sinh{ b x}\\right]",
+      "\\int \\sin{ a x} \\sinh{ b x} dx = \\frac{1}{ a ^{2} + b ^{2}} \\left[ b \\cosh{ b x} \\sin{ a x} - a \\cos{ a x} \\sinh{ b x}\\right]",
+      "\\int \\sinh{ a x} \\cosh{ a x} dx = \\frac{1}{4 a } \\left[-2 a x + \\sinh{2 a x}\\right]",
+      "\\int \\sinh{ a x} \\cosh{ b x} dx = \\frac{1}{ b ^{2} - a ^{2}} \\left[ b \\cosh{ b x} \\sinh{ a x} - a \\cosh{ a x} \\sinh{ b x}\\right]",
     ],
   },
 };
