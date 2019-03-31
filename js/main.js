@@ -171,18 +171,18 @@ const data = {
       "\\int \\cosh{ a x} dx = \\frac{1}{ a } \\sinh{ a x}",
       `\\int e^{ a x} \\sinh{ b x} dx = \\left\\{\\begin{array}{ll}
         \\dfrac{e^{ a x}}{ a ^{2} - b ^{2}} \\left[ a \\cosh{ b x} - b \\sinh{ b x}\\right] & a \\neq b \\\\
-        \\dfrac{e^{2 a x}}{4 a } + \\dfrac{x}{2} & a = b 
+        \\dfrac{e^{2 a x}}{4 a } + \\dfrac{x}{2} & a = b
       \\end{array}\\right.`,
       "\\int \\sinh{ a x} dx = \\frac{1}{ a } \\cosh{ a x}",
-      `e^{ a x} \\sinh{ b x} dx = \\left
+      `\\int e^{ a x} \\sinh{ b x} dx = \\left
       \\{\\begin{array}{ll}
         \\dfrac{e^{ a x}}{ a ^{2} - b ^{2}} \\left[- b \\cosh{ b x} + a \\sinh{ b x}\\right] & a \\neq b \\\\
-        \\dfrac{e^{2 a x}}{4 a } - \\dfrac{x}{2} & a = b 
+        \\dfrac{e^{2 a x}}{4 a } - \\dfrac{x}{2} & a = b
       \\end{array}\\right.`,
       `\\int e^{ a x} \\tanh{ b x} dx = \\left
       \\{\\begin{array}{ll}
         \\dfrac{e^{\\left( a + 2 b \\right) x}}{ a + 2 b } {}_2F_1 \\left[1 + \\dfrac{ a }{2 b }, 1, 2 + \\dfrac{ a }{2 b }, -e^{2 b x}\\right] - \\dfrac{1}{ a } e^{ a x} {}_2F_1 \\left[\\dfrac{ a }{2 b }, 1, 1E, -e^{2 b x}\\right] & a \\neq b \\\\
-        \\dfrac{e^{ a x} - 2 \\tan^{-1} \\left[e^{ a x}\\right]}{ a } & a = b 
+        \\dfrac{e^{ a x} - 2 \\tan^{-1} \\left[e^{ a x}\\right]}{ a } & a = b
       \\end{array}\\right.`,
       "\\int \\tanh{ a x} dx = \\frac{1}{ a } \\ln{\\cosh{ a x}}",
       "\\int \\cos{ a x} \\cosh{ b x} dx = \\frac{1}{ a ^{2} + b ^{2}} \\left[ a \\sin{ a x} \\cosh{ b x} + b \\cos{ a x} \\sinh{ b x}\\right]",
@@ -258,7 +258,7 @@ function renderSection(data, sectionElement) {
       className: INTEGRAL_CLASS
     });
     listElement.appendChild(integralElement);
-    
+
     katex.render(data[sectionElement.id].integrals[i], integralElement, RENDER_OPTIONS);
   }
 }
