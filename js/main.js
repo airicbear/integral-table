@@ -29,7 +29,7 @@ const data = {
     "title": "Integrals of Rational Functions",
     "integrals": [
       "\\int \\frac{1}{\\left(x + a \\right)^{2}} dx = - \\frac{1}{x + a }",
-      "\\int \\left(x + a \\right)^{ n } dx = \\frac{\\left(x + a \\right)^{ n  + 1}}{ n + 1}, \\quad n \\neq 1",
+      "\\int \\left(x + a \\right)^{ n } dx = \\frac{\\left(x + a \\right)^{ n  + 1}}{ n + 1}, \\quad n \\neq -1",
       "\\int x\\left(x + a \\right)^{ n } dx = \\frac{\\left(x + a \\right)^{ n  + 1}\\left(\\left( n + 1\\right) x - a \\right)}{\\left( n + 1\\right)\\left( n + 2\\right)}",
       "\\int \\frac{1}{1 + x^{2}} dx = \\tan^{-1} x",
       "\\int \\frac{1}{ a ^{2} + x^{2}} dx = \\frac{1}{ a } \\tan^{-1} \\frac{x}{ a }",
